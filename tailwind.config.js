@@ -12,7 +12,15 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      boxShadow: {
+        'personal':'0px 0px 7px 4px rgba(0,0,0,0.1)',
+      }
+    },
+    clipPath: {
+      bannerPolygon: "polygon(8% 0, 100% 0%, 100% 100%, 0 100%)",
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-clip-path'),
+  ],
 }
